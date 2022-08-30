@@ -1,0 +1,58 @@
+<section class="contact-hero">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+                <h1 class="mb-4">Contact Us</h1>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, reiciendis provident fugit eveniet nesciunt architecto expedita laborum asperiores, accusamus fugiat natus sit cupiditate. Dolores distinctio, quisquam earum eligendi impedit non!</p>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <h2 class="pb-3 fw-bold">Get In Touch</h2>
+                <p class="pe-5"><small>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit provident eligendi, a neque hic, esse delectus repellat corporis possimus excepturi quia voluptatem obcaecati impedit ea minus atque iste eius vel!
+                </small></p>
+                <address>
+                    Company LTD <br>
+                    3rd Floor, 86-90 Paul Street<br>
+                    London EC2A 4NE, UK<br>
+                    Email: info@agpaytech.com
+                </address>
+            </div>
+            <div class="col-lg-7">
+                <div class="">
+                    <div class="">
+                        <h2 class="pb-3 fw-bold">Write here</h2>
+                        <form [formGroup]="exform">
+                        <div class="form-group mb-3">
+                            <label class="col-form-label">Name:</label>
+                            <input formControlName="name" type="text" class="form-control">
+                            <small *ngIf="exform.controls['name'].invalid && exform.controls['name'].touched" class="text-danger">Name is Required</small> 
+                        </div>
+                        <div class="form-group mb-3">
+                            <label class="col-form-label">Email:</label>
+                            <input formControlName="email" type="text" class="form-control" >
+                            <small *ngIf="exform.controls['email'].invalid && exform.controls['email'].touched" class="text-danger">Email is Required</small>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label class="col-form-label">Phone:</label>
+                            <input formControlName="phone" type="text" class="form-control" >
+                            <small *ngIf="exform.controls['phone'].invalid && exform.controls['phone'].touched" class="text-danger">Phone no is Required(minimum length 10,numbers are only allowed)</small>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label class="col-form-label">Message:</label>
+                            <textarea formControlName="message" class="form-control" ></textarea>
+                            <small *ngIf="exform.controls['message'].invalid && exform.controls['message'].touched" class="text-danger"> Message is Required(minimum length 10)</small> 
+                        </div>
+                        <button (click)="clicksub()" [disabled]="exform.invalid" type="button" class="btn btn-primary">Send message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,9 @@
+.active-link
+{
+    font-weight: bold;
+    color: rgb(255, 238, 25);
+}
+.navbar ul li
+{
+    margin-right: 20px;
+}

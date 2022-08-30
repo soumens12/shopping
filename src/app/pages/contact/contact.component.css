@@ -1,0 +1,22 @@
+.form-control.ng-touched.ng-invalid {
+    border:1px solid red;
+   }
+   .form-control.ng-touched.ng-valid {
+    border:1px solid green;
+   }
+   
+   .contact-hero
+   {
+    background: url("../../../assets/img/contact-hero.jpg");
+    padding: 5rem 0;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+   }
+   .contact-hero h1{
+    font-size: 4rem;
+    color: #fff;
+    font-weight: bold;
+}
